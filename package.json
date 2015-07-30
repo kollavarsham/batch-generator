@@ -1,20 +1,17 @@
 {
   "name": "batch-generator",
-  "version": "0.0.0",
-  "description": "My neat module",
+  "version": "0.0.1",
+  "description": "Generate Kollavarsham Dates in batch for Gregorian Years",
   "license": "MIT",
   "repository": "kollavarsham/batch-generator",
   "author": {
-    "name": "",
+    "name": "The Kollavarsham Team",
     "email": "imbleedingme@googlemail.com",
     "url": "kollavarsham.org"
   },
   "bin": "cli.js",
   "engines": {
-    "node": ">=0.10.0"
-  },
-  "scripts": {
-    "test": "mocha"
+    "node": ">=0.12.0"
   },
   "files": [
     "index.js",
@@ -23,12 +20,13 @@
   "keywords": [
     "cli-app",
     "cli",
-    ""
+    "kollavarsham",
+    "testing"
   ],
   "dependencies": {
-    "meow": "^3.3.0"
+    "kollavarsham": "^0.1.0",
+    "meow": "^3.3.0",
+    "sprintf-js": "^1.0.3"
   },
-  "devDependencies": {
-    "mocha": "^2.2.5"
-  }
+  "devDependencies": {}
 }

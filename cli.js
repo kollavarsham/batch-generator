@@ -6,18 +6,15 @@ var batchGenerator = require('./');
 var cli = meow({
 	help: [
 		'Usage',
-		'  $ batch-generator [input]',
-		'',
-		'Examples',
-		'  $ batch-generator',
-		'  unicorns & rainbows',
-		'',
-		'  $ batch-generator ponies',
-		'  ponies & rainbows',
+		'  $ batch-generator [year]',
 		'',
 		'Options',
-		'  --foo  Lorem ipsum. Default: false'
+		'  -y --year  Gregorian Year to generate the Kollavarsham dates for. Default: current-year',
+		'',
+		'Examples',
+		'  $ batch-generator 2010',
+		'  if year is not specified, current year will be used as fefault'
 	]
 });
 
-console.log(batchGenerator(cli.input[0] || 'unicorns'));
+console.log(batchGenerator(cli.input));
