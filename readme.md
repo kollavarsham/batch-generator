@@ -1,69 +1,29 @@
-# batch-generator [![Build Status](https://travis-ci.org/kollavarsham/batch-generator.svg?branch=master)](https://travis-ci.org/kollavarsham/batch-generator)
+# batch-generator
 
-> My neat module
+> batch-generator
 
 
 ## Install
 
 ```
-$ npm install --save batch-generator
+$ npm install -g batch-generator
 ```
-
 
 ## Usage
 
-```js
-var batchGenerator = require('batch-generator');
-
-batchGenerator('unicorns');
-//=> unicorns & rainbows
 ```
+Generate Kollavarsham Dates in batch for Gregorian Years
 
+Usage
+	$ batch-generator [year]
 
-## CLI
+Options
+	-y --year  Gregorian Year (between 1900 & 2050) to generate the Kollavarsham dates for. Default: current-year
 
+Examples
+	$ batch-generator 2010
+	if year is not specified, current year will be used as default
 ```
-$ npm install --global batch-generator
-```
-```
-$ batch-generator --help
-
-  Usage
-    batch-generator [input]
-
-  Example
-    batch-generator
-    unicorns & rainbows
-
-    batch-generator ponies
-    ponies & rainbows
-
-  Options
-    --foo  Lorem ipsum. Default: false
-```
-
-
-## API
-
-### batchGenerator(input, [options])
-
-#### input
-
-*Required*  
-Type: `string`
-
-Lorem ipsum.
-
-#### options
-
-##### foo
-
-Type: `boolean`  
-Default: `false`
-
-Lorem ipsum.
-
-
 ## License
 
-MIT © [](http://kollavarsham.org)
+Copyright © 2015 [The Kollavarsham Team](http://kollavarsham.org). Licensed under the MIT license
