@@ -25,7 +25,7 @@
   ],
   "dependencies": {
     "chalk": "^1.1.1",
-    "kollavarsham": "^0.5.0",
+    "kollavarsham": "^0.6.4",
     "meow": "^3.3.0",
     "sprintf-js": "^1.0.3"
   },

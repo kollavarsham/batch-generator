@@ -12,7 +12,7 @@ var getOutputForADay = function (kollavarshamDate) {
 	var result = sprintf('| %4s  %-9s  %2s  %-9s | %4s  %5s  %2s | %-13s |',
 		kollavarshamDate.gregorianDate.getFullYear(), monthNames[kollavarshamDate.gregorianDate.getMonth()],
 		kollavarshamDate.gregorianDate.getDate(), kollavarshamDate.weekdayName, kollavarshamDate.year,
-		kollavarshamDate.calendarData.malayalaMasa, kollavarshamDate.day, kollavarshamDate.calendarData.malayalaNaksatra);
+		kollavarshamDate.calendarData.malayalaMasa, kollavarshamDate.date, kollavarshamDate.calendarData.malayalaNaksatra);
 	return result + '\n' + separator;
 };
 
