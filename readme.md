@@ -26,4 +26,4 @@ Examples
 ```
 ## License
 
-Copyright © 2015 [The Kollavarsham Team](http://kollavarsham.org). Licensed under the MIT license
+Copyright © 2015-2016 [The Kollavarsham Team](http://kollavarsham.org). Licensed under the MIT license

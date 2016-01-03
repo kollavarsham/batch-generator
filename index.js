@@ -9,10 +9,10 @@ var getOutputForADay = function (kollavarshamDate) {
 	var monthNames = ["January", "February", "March", "April", "May", "June",
 	  "July", "August", "September", "October", "November", "December"
 	];
-	var result = sprintf('| %4s  %-9s  %2s  %-9s | %4s  %5s  %2s | %-13s |',
+	var result = sprintf('| %4s  %-9s  %2s  %-9s | %4s  %5s  %2s | %-13s ',
 		kollavarshamDate.gregorianDate.getFullYear(), monthNames[kollavarshamDate.gregorianDate.getMonth()],
 		kollavarshamDate.gregorianDate.getDate(), kollavarshamDate.weekdayName, kollavarshamDate.year,
-		kollavarshamDate.calendarData.malayalaMasa, kollavarshamDate.date, kollavarshamDate.calendarData.malayalaNaksatra);
+		kollavarshamDate.mlMasaName, kollavarshamDate.date, kollavarshamDate.mlNaksatraName);
 	return result + '\n' + separator;
 };
 
